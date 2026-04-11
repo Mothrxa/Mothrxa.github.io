@@ -28,7 +28,7 @@ Outside the technical side, I've led teams, represented my class, and headed ext
 - Access control, introductory penetration testing & reconnaissance
 
 **Programming & Development**
-- Python, Dart/Flutter, MIPS Assembly
+- Python, Dart/Flutter
 - Compiler design (lexical, syntactic, semantic analysis)
 - Hardware description & datapath logic (single-cycle processor)
 
@@ -130,5 +130,5 @@ Designed and implemented a single-cycle MIPS-like processor from the ground up â
 I'm open to collaborations, internships, and interesting problems.
 
 [![Email](https://img.shields.io/badge/Email-chekrouni.derar@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chekrouni.derar@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/derar-chekrouni)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)]([https://linkedin.com/in/derar-chekrouni](https://www.linkedin.com/in/derar-chekrouni-040092248/))
 [![GitHub](https://img.shields.io/badge/GitHub-Mothrxa-181717?style=flat&logo=github)](https://github.com/Mothrxa)
