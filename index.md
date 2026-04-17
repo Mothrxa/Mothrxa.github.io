@@ -49,6 +49,7 @@ A secure, production-grade voting platform built on a true three-tier distribute
 The database layer uses **PostgreSQL + Patroni + etcd** for automatic leader election and synchronous replication. The backend is a stateless **Node.js/Express** API cluster, horizontally scalable by design. The frontend is served by three **Nginx** nodes behind HTTPS. The entire infrastructure is connected over a **Tailscale VPN mesh**, with JWT authentication end-to-end.
 
 Resilience was validated through live failure scenarios — nodes taken down mid-operation, with the system recovering automatically at every tier.
+
 ---
 
 ### EBIOS-RM Enterprise Security Assessment
