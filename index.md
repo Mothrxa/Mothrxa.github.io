@@ -17,20 +17,15 @@ Outside the technical side, I've led teams, represented my class, and headed ext
 
 ## Core Skills
 
-**Systems & Networks**
-- Linux administration, TCP/IP stack, network architecture
-- Load balancing, high availability, failover design
-- Distributed systems, stateless application layers, leader election
+**Networks & Infrastructure**
+- TCP/IP, Routing & Switching (OSPF, VLANs, STP, NAT, ACLs)
+- Network Architecture, High Availability, Load Balancing, Failover Design
 
-**Security**
-- Risk analysis with EBIOS-RM
-- End-to-end encryption (AES, RSA-2048, PGP concepts, SHA-256)
-- Access control, introductory penetration testing & reconnaissance
+**Systems Administration**
+- Linux, Distributed Systems, Stateless Application Design, Automated Leader Election
 
-**Programming & Development**
+**Programming**
 - Python, Dart/Flutter
-- Compiler design (lexical, syntactic, semantic analysis)
-- Hardware description & datapath logic (single-cycle processor)
 
 **Languages**
 - Arabic · French · English · Norwegian
@@ -91,6 +86,18 @@ A fully deployed, end-to-end encrypted web mailing application built from scratc
 
 ---
 
+### OmniAI — AI-Powered Mobile Application
+**[GitHub](https://github.com/Mothrxa/OmniAi)**
+
+| | |
+|---|---|
+| **Tech Stack** | Flutter, Python/Flask, OpenAI, Whisper, Kokoro TTS, Tesseract OCR, Helsinki-NLP, Firebase |
+| **Domain** | Mobile Development · AI Integration |
+
+A Flutter mobile application bundling multiple AI tools in one place: chat assistant (GPT-4o-mini), speech-to-text (Whisper), text-to-speech (Kokoro), OCR (Tesseract), multilingual translation (Helsinki-NLP), text summarization (BART), and a full PDF toolkit. Backed by a Flask API handling all model inference, with Firebase authentication and a complete onboarding/profile flow.
+
+---
+
 ### Custom Compiler
 **[GitHub](https://github.com/Mothrxa/Compiler)**
 
@@ -121,14 +128,15 @@ Designed and implemented a single-cycle MIPS-like processor from the ground up �
 |---|---|
 | **Master 1 — Networks & Embedded Systems** | University of Algiers 1 · 2025 – Present |
 | **Bachelor's Degree — Computer Science** | University of Algiers 1 · 2022 – 2025 |
-| **Cisco Certified Network Associate (CCNA)** |
+| **Cisco Certified Network Associate (CCNA)** | 2026 |
+| **ISC2 Certified in Cybersecurity (ISC2 CC)** | 2026 |
 
 ---
 
-## 📬 Let's Connect
+## Let's Connect
 
 I'm open to collaborations, internships, and interesting problems.
 
 [![Email](https://img.shields.io/badge/Email-chekrouni.derar@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chekrouni.derar@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)]([https://linkedin.com/in/derar-chekrouni](https://www.linkedin.com/in/derar-chekrouni-040092248/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/derar-chekrouni-040092248/)
 [![GitHub](https://img.shields.io/badge/GitHub-Mothrxa-181717?style=flat&logo=github)](https://github.com/Mothrxa)
