@@ -7,7 +7,7 @@
 
 ## About Me
 
-I'm a Networks & Embedded Systems engineering student at the University of Algiers 1, with a hands-on background that stretches from low-level processor design all the way up to enterprise-grade cybersecurity assessments. I'm the kind of engineer who won't stop until the system works under real failure conditions — not just in theory.
+I'm a Networks & Embedded Systems student at the University of Algiers 1, with a hands-on background that stretches from low-level processor design all the way up to enterprise-grade cybersecurity assessments. I'm the kind of engineer who won't stop until the system works under real failure conditions — not just in theory.
 
 My work lives at the intersection of **distributed systems**, **network infrastructure**, and **security**. I care deeply about systems that are resilient, secure, and built to last.
 
