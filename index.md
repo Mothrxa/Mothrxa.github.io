@@ -126,7 +126,7 @@ Designed and implemented a single-cycle MIPS-like processor from the ground up �
 
 | | |
 |---|---|
-| **Master 1 — Networks & Embedded Systems** | University of Algiers 1 · 2025 – Present |
+| **Master's Degree Networks & Embedded Systems** | University of Algiers 1 · 2025 – Present |
 | **Bachelor's Degree — Computer Science** | University of Algiers 1 · 2022 – 2025 |
 | **Cisco Certified Network Associate (CCNA)** | 2026 |
 | **ISC2 Certified in Cybersecurity (ISC2 CC)** | 2026 |
