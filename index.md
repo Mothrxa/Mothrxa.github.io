@@ -139,5 +139,5 @@ Designed and implemented a single-cycle MIPS-like processor from the ground up â
 I'm open to collaborations, internships, and interesting problems.
 
 [![Email](https://img.shields.io/badge/Email-chekrouni.derar@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chekrouni.derar@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/derar-chekrouni-040092248/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/derar-chekrouni/)
 [![GitHub](https://img.shields.io/badge/GitHub-Mothrxa-181717?style=flat&logo=github)](https://github.com/Mothrxa)
