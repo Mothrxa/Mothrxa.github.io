@@ -1,12 +1,13 @@
 # Derar Chekrouni
 Network & Systems | Linux • Networking • Infrastructure
+
 ---
 
 ## About
 
 Networks & Embedded Systems student focused on network infrastructure and Linux systems administration. Currently preparing for the RHCSA.
 
-I build and test real systems — not just configure them. My work centers on infrastructure that holds under real conditions: failover, load balancing, automated provisioning.
+I build and test real systems — not just configure them. My work focuses on infrastructure that handles real conditions: failover, load balancing and automated provisioning.
 
 ---
 
