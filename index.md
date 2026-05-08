@@ -1,7 +1,5 @@
 # Derar Chekrouni
 Network & Systems | Linux • Networking • Infrastructure
-
-
 ---
 
 ## About
@@ -17,9 +15,8 @@ I build and test real systems — not just configure them. My work centers on in
 ### Enterprise Network Infrastructure
 [GitHub](#)
 
-| | |
-|---|---|
 | **Tech** | GNS3, Ansible, OSPF, VLANs, STP, DHCP, DNS, SMTP, SNMP, Syslog |
+|---|---|
 | **Domain** | Network Infrastructure · Automation |
 
 Full enterprise-grade network built and provisioned from scratch. Multi-segment architecture covering a Data Center, DMZ, and departmental zones — with automated configuration deployment through Ansible.
@@ -33,9 +30,8 @@ Full enterprise-grade network built and provisioned from scratch. Multi-segment 
 ### Distributed Online Voting Platform
 [GitHub](https://github.com/Mothrxa/Distributed-Voting)
 
-| | |
-|---|---|
 | **Tech** | HAProxy, PostgreSQL, Patroni, etcd, Node.js, Nginx, Tailscale VPN |
+|---|---|
 | **Domain** | Distributed Systems · Infrastructure |
 
 Highly available distributed system built on 12 virtual machines with no single point of failure. Each tier runs behind its own HAProxy load balancer — failures at any tier don't cascade.
@@ -48,9 +44,8 @@ Highly available distributed system built on 12 virtual machines with no single 
 
 ## Education & Certifications
 
-| | |
-|---|---|
 | **Master's — Networks & Embedded Systems** | University of Algiers 1 · 2025 – Present |
+|---|---|
 | **Bachelor's — Computer Science** | University of Algiers 1 · 2022 – 2025 |
 | **Cisco Certified Network Associate (CCNA)** | 2026 |
 | **ISC2 Certified in Cybersecurity (ISC2 CC)** | 2026 |
