@@ -18,7 +18,7 @@ Currently studying for the RHCSA.
 
 ## Projects
 
-### 🏢 Multi-Site IaaS Provider Infrastructure
+### Multi-Site IaaS Provider Infrastructure
 [GitHub](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure) · [Report](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure/blob/main/Report.pdf)
 
 | **Tech** | GNS3, Containerlab, Cisco IOS/IOL, Arista cEOS, pfSense, OSPF, IPsec, Ansible, Terraform, KVM/libvirt, Docker, PostgreSQL/Patroni |
@@ -28,17 +28,17 @@ Currently studying for the RHCSA.
 
 Network and systems infrastructure for Strata, a fictional IaaS provider with two sites: a corporate headquarters and a cloud datacenter, linked over an untrusted ISP transit.
 
-- **Inter-site:** site-to-site IPsec VPN terminated on pfSense at each perimeter, multi-area OSPF (area 0 at HQ, area 1 in the datacenter)
-- **Datacenter:** containerized 2-spine / 4-leaf Clos fabric (Cisco IOL + Arista cEOS) with ECMP, built at full target scale
-- **HQ:** segmented campus with IT, HR, BizOps, Data Center, DMZ and Management VLANs. Built single-device-per-tier in GNS3 due to lab resources; the full redundant design (HSRP, LACP, dual firewalls) was validated in Packet Tracer
-- **Core services:** BIND9 + ISC DHCP with TSIG dynamic DNS, FreeRADIUS AAA, Postfix/Dovecot mail, LibreNMS, centralized logging in Graylog
-- **Self-service provisioning:** a customer signs up on the portal and Terraform provisions a KVM VM (cloud-init, SSH key injection) or a Docker container, exposed publicly through the datacenter NAT gateway
-- **Automation:** Ansible for device config (NTP, SNMP, syslog, STP edge hardening) and web host baselines, with vaulted credentials
-- **Databases:** Patroni-managed PostgreSQL with etcd for automatic failover on both application databases
+- Site-to-site IPsec VPN terminated on pfSense at each perimeter, with multi-area OSPF (area 0 at HQ, area 1 in the datacenter)
+- Containerized 2-spine / 4-leaf Clos fabric in the datacenter (Cisco IOL + Arista cEOS) with ECMP, built at full target scale
+- HQ campus segmented into IT, HR, BizOps, Data Center, DMZ and Management VLANs. Built single-device-per-tier in GNS3 due to lab resources; the full redundant design (HSRP, LACP, dual firewalls) was validated in Packet Tracer
+- BIND9 and ISC DHCP with TSIG dynamic DNS, FreeRADIUS for AAA, Postfix/Dovecot mail, LibreNMS monitoring and centralized logging in Graylog
+- A customer signs up on the portal and Terraform provisions a KVM VM (cloud-init, SSH key injection) or a Docker container, exposed publicly through the datacenter NAT gateway
+- Ansible playbooks push device config (NTP, SNMP, syslog, STP edge hardening) and web host baselines, with vaulted credentials
+- Both application databases run Patroni-managed PostgreSQL with etcd for automatic failover
 
 ---
 
-### 🗳️ Distributed Online Voting Platform
+### Distributed Online Voting Platform
 [GitHub](https://github.com/Mothrxa/Distributed-Voting)
 
 | **Tech** | HAProxy, PostgreSQL, Patroni, etcd, Node.js, Nginx, Tailscale VPN |
@@ -53,7 +53,7 @@ Highly available distributed system built on 12 virtual machines with no single 
 
 ---
 
-### 🏠 Homelab
+### Homelab
 [GitHub](https://github.com/Mothrxa/Homelab)
 
 | **Tech** | Raspberry Pi 4, Fedora Server, Pi-hole, Docker, Dockge, Uptime Kuma, Stirling-PDF, Tailscale, Wake-on-LAN |
@@ -62,10 +62,10 @@ Highly available distributed system built on 12 virtual machines with no single 
 
 Self-hosted replacements for paid services, built to run unattended while I'm abroad. Rule of the design: nothing in it should take the house offline if it fails.
 
-- **Two-tier hosts:** an always-on Raspberry Pi 4 (booting from USB SSD) for DNS, DHCP and light services, and a Fedora Server machine for heavier workloads that sleeps when idle
-- **Remote wake:** Tailscale can't reach a sleeping host because the tunnel goes down with the OS, so the Pi relays the Wake-on-LAN packet from inside the LAN. Getting there meant replacing a USB NIC that had no WoL support with an RTL8153-based one
-- **Fail-safe DNS:** Pi-hole runs DHCP and hands out the router as secondary DNS, so if the Pi dies the house keeps resolving
-- **Operations:** Compose stacks managed with Dockge across both hosts, uptime monitored with Uptime Kuma, remote access over Tailscale
+- An always-on Raspberry Pi 4 (booting from USB SSD) handles DNS, DHCP and light services; a Fedora Server machine takes heavier workloads and sleeps when idle
+- Tailscale can't reach a sleeping host because the tunnel goes down with the OS, so the Pi relays the Wake-on-LAN packet from inside the LAN. Getting there meant replacing a USB NIC that had no WoL support with an RTL8153-based one
+- Pi-hole runs DHCP and hands out the router as secondary DNS, so if the Pi dies the house keeps resolving
+- Compose stacks are managed with Dockge across both hosts, monitored with Uptime Kuma and reachable over Tailscale
 
 ---
 
