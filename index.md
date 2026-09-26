@@ -21,7 +21,7 @@ Currently studying for the RHCSA.
 ### Multi-Site IaaS Provider Infrastructure
 [GitHub](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure) · [Report](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure/blob/main/Report.pdf)
 
-| **Tech** | GNS3, Containerlab, Cisco IOS/IOL, Arista cEOS, pfSense, OSPF, IPsec, Ansible, Terraform, KVM/libvirt, Docker, PostgreSQL/Patroni |
+| **Tech** | GNS3, Containerlab, Cisco IOS/IOL, Arista cEOS, pfSense, OSPF, IPsec, Ansible, Terraform, KVM/libvirt, Docker |
 |---|---|
 | **My role** | Network, systems and automation (team of 2) |
 | **Domain** | Network Infrastructure · Cloud · Automation |
@@ -34,7 +34,6 @@ Network and systems infrastructure for Strata, a fictional IaaS provider with tw
 - BIND9 and ISC DHCP with TSIG dynamic DNS, FreeRADIUS for AAA, Postfix/Dovecot mail, LibreNMS monitoring and centralized logging in Graylog
 - A customer signs up on the portal and Terraform provisions a KVM VM (cloud-init, SSH key injection) or a Docker container, exposed publicly through the datacenter NAT gateway
 - Ansible playbooks push device config (NTP, SNMP, syslog, STP edge hardening) and web host baselines, with vaulted credentials
-- Both application databases run Patroni-managed PostgreSQL with etcd for automatic failover
 
 ---
 
