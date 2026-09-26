@@ -70,11 +70,12 @@ Self-hosted replacements for paid services, built to run unattended while I'm ab
 
 ## Experience
 
-### Freelance Network Field Engineer
-*Oslo, Norway · Jun 2026 - Sep 2026*
+### IT Support & Network Engineer
+*QIT Solutions 247 · Freelance · Oslo, Norway · Jun 2026 - Sep 2026*
 
-- On-site SD-WAN edge activation support at a customer site
-- Data center smart hands: rack mounting and cabling SD-WAN appliances into customer switching, rated Excellent by the client
+- On-site IT support
+- Network device installation in offices and data centers
+- Issue troubleshooting (hardware/software/network)
 
 ---
 
