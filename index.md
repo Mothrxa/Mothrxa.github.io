@@ -1,41 +1,51 @@
 # Derar Chekrouni
-Network & Systems | Linux • Networking • Infrastructure
+
+**Network & Systems Engineer** · Linux · Routing & Switching · Infrastructure Automation
+
+CCNA · ISC2 CC · RHCSA in progress
 
 ---
 
 ## About
 
-Networks & Embedded Systems student focused on network infrastructure and Linux systems administration. Currently preparing for the RHCSA.
+Final-year Master's student in Networks & Embedded Systems at the University of Algiers 1, doing freelance network field work in Oslo on the side.
 
-I build and test real systems — not just configure them. My work focuses on infrastructure that handles real conditions: failover, load balancing and automated provisioning.
+I like infrastructure that keeps working when parts of it don't. Most of what I build is about that: redundant routing, databases that elect a new leader on their own, provisioning that runs without me touching it, and a home lab designed to survive its own failures while I'm in another country.
+
+Currently studying for the RHCSA.
 
 ---
 
 ## Projects
 
-### Enterprise Network Infrastructure
-[GitHub](#)
+### 🏢 Multi-Site IaaS Provider Infrastructure
+[GitHub](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure) · [Report](https://github.com/Mothrxa/Multi-Site-IaaS-Provider-Infrastructure/blob/main/Report.pdf)
 
-| **Tech** | GNS3, Ansible, OSPF, VLANs, STP, DHCP, DNS, SMTP, SNMP, Syslog |
+| **Tech** | GNS3, Containerlab, Cisco IOS/IOL, Arista cEOS, pfSense, OSPF, IPsec, Ansible, Terraform, KVM/libvirt, Docker, PostgreSQL/Patroni |
 |---|---|
-| **Domain** | Network Infrastructure · Automation |
+| **My role** | Network, systems and automation (team of 2) |
+| **Domain** | Network Infrastructure · Cloud · Automation |
 
-Full enterprise-grade network built and provisioned from scratch. Multi-segment architecture covering a Data Center, DMZ, and departmental zones — with automated configuration deployment through Ansible.
+Network and systems infrastructure for Strata, a fictional IaaS provider with two sites: a corporate headquarters and a cloud datacenter, linked over an untrusted ISP transit.
 
-- Dynamic routing with OSPF, VLAN segmentation, and Rapid STP for L2 resilience
-- Core services deployed across zones: DHCP, DNS, SMTP, IMAP, SNMP, Syslog
-- End-to-end connectivity and segmentation validated through systematic testing
+- **Inter-site:** site-to-site IPsec VPN terminated on pfSense at each perimeter, multi-area OSPF (area 0 at HQ, area 1 in the datacenter)
+- **Datacenter:** containerized 2-spine / 4-leaf Clos fabric (Cisco IOL + Arista cEOS) with ECMP, built at full target scale
+- **HQ:** segmented campus with IT, HR, BizOps, Data Center, DMZ and Management VLANs. Built single-device-per-tier in GNS3 due to lab resources; the full redundant design (HSRP, LACP, dual firewalls) was validated in Packet Tracer
+- **Core services:** BIND9 + ISC DHCP with TSIG dynamic DNS, FreeRADIUS AAA, Postfix/Dovecot mail, LibreNMS, centralized logging in Graylog
+- **Self-service provisioning:** a customer signs up on the portal and Terraform provisions a KVM VM (cloud-init, SSH key injection) or a Docker container, exposed publicly through the datacenter NAT gateway
+- **Automation:** Ansible for device config (NTP, SNMP, syslog, STP edge hardening) and web host baselines, with vaulted credentials
+- **Databases:** Patroni-managed PostgreSQL with etcd for automatic failover on both application databases
 
 ---
 
-### Distributed Online Voting Platform
+### 🗳️ Distributed Online Voting Platform
 [GitHub](https://github.com/Mothrxa/Distributed-Voting)
 
 | **Tech** | HAProxy, PostgreSQL, Patroni, etcd, Node.js, Nginx, Tailscale VPN |
 |---|---|
 | **Domain** | Distributed Systems · Infrastructure |
 
-Highly available distributed system built on 12 virtual machines with no single point of failure. Each tier runs behind its own HAProxy load balancer — failures at any tier don't cascade.
+Highly available distributed system built on 12 virtual machines with no single point of failure. Each tier runs behind its own HAProxy load balancer. Failures at any tier don't cascade.
 
 - PostgreSQL + Patroni + etcd for automatic leader election and synchronous replication
 - Stateless Node.js backend, horizontally scalable by design
@@ -43,16 +53,48 @@ Highly available distributed system built on 12 virtual machines with no single 
 
 ---
 
-## Education & Certifications
+### 🏠 Homelab
+[GitHub](https://github.com/Mothrxa/Homelab)
 
-| **Master's — Networks & Embedded Systems** | University of Algiers 1 · 2025 – Present |
+| **Tech** | Raspberry Pi 4, Fedora Server, Pi-hole, Docker, Dockge, Uptime Kuma, Stirling-PDF, Tailscale, Wake-on-LAN |
 |---|---|
-| **Bachelor's — Computer Science** | University of Algiers 1 · 2022 – 2025 |
-| **Cisco Certified Network Associate (CCNA)** | 2026 |
-| **ISC2 Certified in Cybersecurity (ISC2 CC)** | 2026 |
-| **Red Hat Certified System Administrator (RHCSA)** | In progress |
+| **Domain** | Self-Hosting · Linux · Networking |
+
+Self-hosted replacements for paid services, built to run unattended while I'm abroad. Rule of the design: nothing in it should take the house offline if it fails.
+
+- **Two-tier hosts:** an always-on Raspberry Pi 4 (booting from USB SSD) for DNS, DHCP and light services, and a Fedora Server machine for heavier workloads that sleeps when idle
+- **Remote wake:** Tailscale can't reach a sleeping host because the tunnel goes down with the OS, so the Pi relays the Wake-on-LAN packet from inside the LAN. Getting there meant replacing a USB NIC that had no WoL support with an RTL8153-based one
+- **Fail-safe DNS:** Pi-hole runs DHCP and hands out the router as secondary DNS, so if the Pi dies the house keeps resolving
+- **Operations:** Compose stacks managed with Dockge across both hosts, uptime monitored with Uptime Kuma, remote access over Tailscale
 
 ---
+
+## Experience
+
+### Freelance Network Field Engineer
+*Oslo, Norway · Jun 2026 - Present*
+
+- On-site SD-WAN edge activation support at a customer site
+- Data center smart hands: rack mounting and cabling SD-WAN appliances into customer switching, rated Excellent by the client
+
+---
+
+## Education & Certifications
+
+| | |
+|---|---|
+| **Master's, Networks & Embedded Systems** | University of Algiers 1 · 2025 - 2027 |
+| **Bachelor's, Computer Science** | University of Algiers 1 · 2022 - 2025 |
+| **Cisco Certified Network Associate (CCNA)** | April 2026 |
+| **ISC2 Certified in Cybersecurity (CC)** | July 2026 |
+| **Red Hat Certified System Administrator (RHCSA)** | In progress |
+| **TryHackMe** | Legend rank (top 1%) |
+
+**Languages:** Arabic (native) · French (fluent) · English (fluent) · Norwegian (learning)
+
+---
+
+## Contact
 
 [![Email](https://img.shields.io/badge/Email-chekrouni.derar@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chekrouni.derar@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Derar%20Chekrouni-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/derar-chekrouni/)
